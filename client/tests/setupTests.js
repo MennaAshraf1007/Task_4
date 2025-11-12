@@ -49,10 +49,10 @@ beforeAll(async () => {
   window.localStorage.setItem('token', registrationPayload.token);
 
   const seedPerkResponse = await api.post('/perks', {
-    title: `Integration Preview Benefit ${crypto.randomUUID()}`,
+    title: 'Integration Preview Benefit 75',
     description: 'Baseline record created during setup for deterministic rendering checks.',
     category: 'travel',
-    merchant: `Integration Merchant ${crypto.randomUUID()}`,
+    merchant: 'Integration Merchant',
     discountPercent: 15
   });
 
